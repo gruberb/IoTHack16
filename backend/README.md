@@ -1,29 +1,14 @@
-Dieses Node Programm öffnen einen seriellen Port und sendet die empfangenen Daten an einen MQTT Broker.
+## NodeJS backend
 
-# Installation
+Node app to receive sensor data over a serial port, and pushing it out via Websockets (socket.io)
 
-Es muss node.js installiert sein (http://nodejs.org)
+## Install
 
-In einer Kommandozeile in das Verzeichnis wechseln, in dem die Datei index.js liegt und dort folgenden Befehl eingeben:
-
-> npm install
+`npm i`
 
 
-# Konfigurieren
+## Run
 
-Die Adresse des MQTT Brokers muss in der Datei index.js angepasst werden. Dazu dient die Variable mqtt_server_url.
+Connect the Arduino via USB to the Computer and start the app:
 
-# Ausführen
-
-Um alle verfügbaren seriellen Anschlüsse aufzulisten:
-
-> node index.js
-
-Um das Programm zu starten und COM1 verwenden:
-
-> node index.js COM1
-
-# Credits
-
-Diese Beispiele basieren auf dem Kurs von Tom Igoe:
-https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-communication-with-node-js/
+`node index.js`
